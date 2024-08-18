@@ -15,9 +15,9 @@ python src/main.py -s data/spec_file/spec.json -i data/input_file/input.txt -o d
 ```
 
    **Explanation:**  
-      - `-s 'data/spec_file/spec.json'`: Path to the specification json file.  
-      - `-i 'data/input_file/input.txt'`: Path to the input txt file.  
-      - `-o 'data/output_file/output.csv'`: Path to the output file where data will be saved.  
+   - `-s 'data/spec_file/spec.json'`: Path to the specification json file.
+   - `-i 'data/input_file/input.txt'`: Path to the input txt file.
+   - `-o 'data/output_file/output.csv'`: Path to the output file where data will be saved.  
     
 
 ## Docker Setup Instructions
