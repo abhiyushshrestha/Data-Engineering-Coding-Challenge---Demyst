@@ -46,5 +46,5 @@ docker build -t problem_2 .
 ```
 
 ```bash
-docker run -t problem_1
+docker run -t problem_2
 ```

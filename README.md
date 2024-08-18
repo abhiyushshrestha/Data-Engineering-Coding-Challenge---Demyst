@@ -1,33 +1,37 @@
-# Data-Engineering-Coding-Challenge---Demyst
 
-# Problem Overview
+# Data Engineering Coding Challenges
 
-## Problem 1: Parsing a Fixed-Width File
+## Judgment Criteria
 
-- **Objective**: Generate a fixed-width file based on a provided specification (where the offsets represent the length of each field). Then, implement a parser that can convert this fixed-width file into a delimited format, such as CSV.
-- **Constraints**: Do not use external Python libraries like pandas for parsing. However, the standard library can be used for writing the CSV file if needed.
-- **Language Options**: The solution can be implemented in Python or Scala.
-- **Delivery**: Source code should be provided via GitHub or Bitbucket.
-- **Bonus**: Extra points if a Docker container (Dockerfile) is provided to easily run the code.
-- **Important Consideration**: Ensure the handling of file encoding.
+- Beauty of the code (beauty lies in the eyes of the beholder)
+- Testing strategies
+- Basic Engineering principles
 
-## Problem 2: Data Processing and Anonymization
+## Problem 1
 
-- **Objective**: Generate a CSV file containing columns for `first_name`, `last_name`, `address`, and `date_of_birth`. Process this file to anonymize the data, specifically the `first_name`, `last_name`, and `address` fields.
-- **Challenge**: Ensure that the solution works efficiently on a 2GB CSV file, and demonstrate scalability for even larger datasets.
-- **Hint**: Consider using a distributed computing platform to handle larger datasets effectively.
+### Parse fixed width file
 
-This README provides a detailed overview of the tasks, outlining the goals, constraints, and additional challenges for both problems.
+- Generate a fixed width file using the provided spec (offset provided in the spec file represent the length of each field).
+- Implement a parser that can parse the fixed width file and generate a delimited file, like CSV for example.
+- DO NOT use python libraries like pandas for parsing. You can use the standard library to write out a csv file (If you feel like)
+- Language choices (Python or Scala)
+- Deliver source via github or bitbucket
+- Bonus points if you deliver a docker container (Dockerfile) that can be used to run the code (too lazy to install stuff that you might use)
+- Pay attention to encoding
 
+## Problem 2
 
-## Docker Setup Instructions
+### Data processing
 
-### Building the Docker Image
+- Generate a csv file containing first_name, last_name, address, date_of_birth
+- Process the csv file to anonymise the data
+- Columns to anonymise are first_name, last_name and address
+- You might be thinking  that is silly
+- Now make this work on 2GB csv file (should be doable on a laptop)
+- Demonstrate that the same can work on bigger dataset
+- Hint - You would need some distributed computing platform
 
-To build the Docker image for the project, use the following command:
+## Choices
 
-```bash
-docker build -t problem_1 .
-
-```bash
-docker run -t problem_1
+- Any language, any platform
+- One of the above problems or both, if you feel like it.
