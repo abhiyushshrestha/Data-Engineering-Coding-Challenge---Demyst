@@ -13,10 +13,10 @@ To execute the Python script, use the following command:
 ```bash
 python src/main.py -s data/spec_file/spec.json -i data/input_file/input.txt -o data/output_file/output.csv
 ```
-**Explanation:**
-    - `-s 'data/spec_file/spec.json'`: Path to the specification json file.
-    - `-i 'data/input_file/input.txt'`: Path to the input txt file.
-    - `-o 'data/output_file/output.csv'`: Path to the output file where data will be saved.
+    **Explanation:**  
+    - `-s 'data/spec_file/spec.json'`: Path to the specification json file.  
+    - `-i 'data/input_file/input.txt'`: Path to the input txt file.  
+    - `-o 'data/output_file/output.csv'`: Path to the output file where data will be saved.  
 
 ## Docker Setup Instructions
 
