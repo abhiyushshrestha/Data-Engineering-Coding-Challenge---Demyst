@@ -1,2 +1,3 @@
-pyspark==3.5.2
-faker
+pyspark==3.4.1
+faker==25.8.0
+pandas==2.2.2

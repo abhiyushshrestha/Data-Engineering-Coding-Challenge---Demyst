@@ -64,6 +64,9 @@ class Main:
 
             logging.info("Processing writing CSV file to a disk")
             self.spark_handler.write_data(df, output_file_path=output_file_path)
+
+            logging.info("Processing deactivation of the spark session")
+            self.spark_handler.stop_spark_session()
         except Exception as e:
             logging.error("Something went wrong. Please check the error message below:\n{e}")
 

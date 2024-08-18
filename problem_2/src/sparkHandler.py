@@ -36,7 +36,7 @@ class SparkHandler:
             self.spark = SparkSession.builder.appName(app_name).getOrCreate()
             logging.info("Spark session initiated successfully.")
         except Exception as e:
-            logging.error("Spark sesssion failed to initiate. Please check the error message below:\n{e}")
+            logging.error(f"Spark sesssion failed to initiate. Please check the error message below:\n{e}")
             self.spark = None
 
     def anonymize_data(self, df):
@@ -83,3 +83,15 @@ class SparkHandler:
         except Exception as e:
             logging.error(f"Error occured while writing the anonymized data to CSV file. Plese check the error message below: \n{e}")
     
+    def stop_spark_session(self):
+        """
+        Stop the Spark session.
+        """
+        if self.spark is not None:
+            try:
+                self.spark.stop()
+                logging.info("Spark session stopped.")
+            except Exception as e:
+                logging.error(f"Failed to stop Spark session. Please check the error below:\n{e}")
+        else:
+            logging.info("Spark session was not initialized.")

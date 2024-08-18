@@ -1,4 +1,3 @@
-import pandas as pd
 import csv
 import logging
 import os
@@ -101,11 +100,11 @@ class FileHandler:
                     writer.writerows(data) 
             else: 
                 logging.warning(f"The file '{output_file_path}' already exists.")
-                column_header_names = list(data[0].keys())
-                with open(output_file_path, 'ab' , encoding='utf-8') as csvfile: 
-                    writer = csv.DictWriter(csvfile, fieldnames=column_header_names)
-                    writer.writeheader()
-                    writer.writerows(data)
+                # column_header_names = list(data[0].keys())
+                # with open(output_file_path, 'ab' , encoding='utf-8') as csvfile: 
+                #     writer = csv.DictWriter(csvfile, fieldnames=column_header_names)
+                #     writer.writeheader()
+                #     writer.writerows(data)
         except Exception as e:
             logging.error(f"Something went wrong. Plese check the error message below: \n{e}")
 

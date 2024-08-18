@@ -1,16 +1,29 @@
-f1 (5) - id
-f2 (12) - name 
-f3 (3) - state
-f4 (2) - area code
-f5 (13) - Country name
-f6 (7) - zip code
-f7 (10) - phone number
-f8 (13) - email
-f9 (20) - street address
-f10 (13) - DOB
+# Problem Overview
 
-ID001JohnsonSmithNSW61Australia000021500000412345678jsmith@ex.com12/144GeorgeStSydney12/07/1995000
+## Problem 1: Parsing a Fixed-Width File
 
+- **Objective**: Generate a fixed-width file based on a provided specification (where the offsets represent the length of each field). Then, implement a parser that can convert this fixed-width file into a delimited format, such as CSV.
+
+## Usage Instructions
+
+### Running the Python Script
+
+To execute the Python script, use the following command:
+
+```bash
 python src/main.py -s data/spec_file/spec.json -i data/input_file/input.txt -o data/output_file/output.csv
+```
 
+## Docker Setup Instructions
+
+### Building the Docker Image
+
+To build the Docker image for the project, use the following command:
+
+```bash
 docker build -t problem_1 .
+```
+
+```bash
+docker run -t problem_1
+```
